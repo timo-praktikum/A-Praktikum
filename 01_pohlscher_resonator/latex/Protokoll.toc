@@ -1,0 +1,25 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.2}
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.3}
+\contentsline {subsection}{\numberline {1.2}\IeC {\"U}berblick}{1}{subsection.4}
+\contentsline {section}{\numberline {2}Theorie}{2}{section.6}
+\contentsline {subsection}{\numberline {2.1}Die ged\IeC {\"a}mpfte erzwungene Schwingung}{2}{subsection.7}
+\contentsline {subsection}{\numberline {2.2}Die homogene Differentialgleichung}{2}{subsection.10}
+\contentsline {subsection}{\numberline {2.3}Interpretation und logarithmisches Dekrement}{2}{subsection.15}
+\contentsline {subsection}{\numberline {2.4}Die inhomogene Differentialgleichung}{3}{subsection.17}
+\contentsline {subsection}{\numberline {2.5}Die Amplitudengleichung}{4}{subsection.24}
+\contentsline {subsection}{\numberline {2.6}Phasenverschiebung}{4}{subsection.27}
+\contentsline {section}{\numberline {3}Der Versuch}{5}{section.28}
+\contentsline {subsection}{\numberline {3.1}Versuchsaufbau}{5}{subsection.29}
+\contentsline {subsection}{\numberline {3.2}Durchf\IeC {\"u}hrung}{5}{subsection.30}
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.31}
+\contentsline {subsection}{\numberline {4.1}Schwingungen ohne Anregungen}{6}{subsection.32}
+\contentsline {subsection}{\numberline {4.2}Schwingungen mit Anregungen}{8}{subsection.36}
+\contentsline {section}{\numberline {5}Fehlerrechnung}{11}{section.40}
+\contentsline {subsection}{\numberline {5.1}Aufnahme der Werte}{11}{subsection.41}
+\contentsline {subsection}{\numberline {5.2}Logarithmisches Dekrement}{11}{subsection.42}
+\contentsline {subsection}{\numberline {5.3}Eigenfrequenz}{11}{subsection.45}
+\contentsline {subsection}{\numberline {5.4}Resonanzfrequenz}{11}{subsection.47}
+\contentsline {subsection}{\numberline {5.5}Diskrete Fouriertransformation}{11}{subsection.49}
+\contentsline {section}{\numberline {6}Diskussion}{12}{section.51}
+\contentsline {subsection}{\numberline {6.1}Fehlerdiskussion}{12}{subsection.52}

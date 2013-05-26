@@ -1,0 +1,24 @@
+reset
+set terminal epslatex color
+set termoption dash
+
+set for [i=1:5] linetype i lt i
+
+set style line 1 lt 2 lc rgb "black" lw 3
+set style line 2 lt 2 lc rgb "black" lw 2
+set style line 3 lt 2 lc rgb "black" lw 3
+set style line 4 lt 2 lc rgb "black" lw 2
+
+set xrange [0:2]
+set yrange [0:8]
+set xlabel '$\omega/\omega_0$'
+set ylabel '$\phi_0(\omega)/\phi_0(0)$'
+#set label '$\sim \cos(\omega t)$' at 1.5,0.25
+#set label '$\sim e^{- \beta t}$' at 0.75,0.6
+#set arrow from 1,0 to 1,8 nohead w dots
+
+set output 'frequenzgang.tex'
+p 'd4.mat' ls 1 title '4mm','d6.mat' lt 1 lc 3 title '6mm','d8.mat' lt 5 lc 3 title '8mm','vertical.mat' lt 3 lc 3 notitle
+
+set output
+!epstopdf frequenzgang.eps

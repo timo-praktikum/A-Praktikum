@@ -1,0 +1,68 @@
+# Created by Octave 3.6.2, Tue May 14 15:21:01 2013 CEST <timo@FBI-11T4>
+# name: parameter
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 12
+# name: l
+# type: scalar
+2.65
+
+
+# name: sigma_l
+# type: scalar
+0.005
+
+
+# name: M
+# type: scalar
+10.142
+
+
+# name: m
+# type: scalar
+0.02
+
+
+# name: r
+# type: scalar
+0.0075
+
+
+# name: a
+# type: scalar
+0.024
+
+
+# name: b
+# type: scalar
+0.1015
+
+
+# name: sigma_M
+# type: scalar
+0.0005
+
+
+# name: sigma_m
+# type: scalar
+0.0005
+
+
+# name: sigma_r
+# type: scalar
+5e-05
+
+
+# name: sigma_a
+# type: scalar
+5e-05
+
+
+# name: sigma_b
+# type: scalar
+5e-05
+
+
+
+

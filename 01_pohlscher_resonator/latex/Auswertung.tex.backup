@@ -1,0 +1,39 @@
+\section{Auswertung}
+\subsection{Schwingungen ohne Anregungen}
+Im Folgenden sollen die Ergebnisse und Auswertungen der Schwingungen ohne Anregung vorgestellt werden.
+\begin{figure}[!htbp]
+\centering
+   \input{plot_dif0}
+   \caption{Schwingungsverlauf des Pohlschen Rades ohne Anregung für vier verschiedene Dämpfungen}
+\end{figure}
+\ \\
+\ \\
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline 
+Dämpfung: & 0mm & 4mm & 6mm & 8mm \\
+\hline
+Eigenfrequenz & & & & \\ $\omega_e$: & 0.328125 & 0.328125 & 0.34375 & 0.3125 \\
+\hline
+Logarithmisches & & & & \\ Dekrement $\Lambda$: & $0.112 \pm 3\rm{x}10^{-3}$ & $0.377 \pm 3\rm{x}10^{-3}$ & $0.795 \pm 3\rm{x}10^{-3}$ & $1.523 \pm 3\rm{x}10^{-3}$ \\
+\hline
+Dämpfungs- & & & & \\ Konstante $\beta$: & 0.0366858 & 0.123508 & 0.2732236 & 0.4758456 \\
+\hline
+Errechnete & & & & \\ ungedämpfte & & & & \\  Eigenfrequenz & & & & \\$\omega_0$: & ... & ... & ... & \\
+\hline 
+\end{tabular} 
+\caption{\large{Auswertung der Schwingungen für die vier Dämpfungen ohne Anregung}}
+\end{table}
+\ \\
+\ \\
+\subsection{Schwingungen mit Anregungen}
+In diesem Abschnitt werden die Schwingungen mit Anregung untersucht.
+
+\begin{figure}[!htbp]
+\caption[Resonanzkurven]
+\centering
+\input{./frequenzgang}
+\caption{Das unterschiedliche Resonanzverhalten des Rades für die drei Dämpfungen in Abhängigkeit von Eigenfrequenz 
+und Anregungsfrequenz} 
+\end{figure}

@@ -1,0 +1,36 @@
+\section{Fehlerrechnung}
+\subsection{Aufnahme der Werte}
+Da die Güte der verwendeten Messgeräte nicht bekannt ist, muss der Messfehler geschätzt werden. Der Auslenkungswinkel des Pohlschen Rades wird mit einer Auflösung von $\SI{0,25}{\degree}$ aufgezeichnet, daher wird ein Fehler von $\sigma_\varphi=\SI{0,125}{\degree}$ angenommen.
+
+\subsection{Logarithmisches Dekrement}
+Der Fehler bei der Berechnung des Logarithmischen Dekrements lässt sich durch eine Gaußsche Fehlerfortpflanzung ermitteln:
+
+\begin{align}
+\sigma_\Lambda=\sqrt{\sigma_{\varphi_k}^2\cdot\left( \frac{1}{\varphi_k}\right)^2+\sigma_{\varphi_{k+1}}^2\cdot\left( \frac{1}{\varphi_{k+1}}\right) ^2}
+\end{align}
+Da die Werte gemittelt werden, wird jeweils der größte Fehler angenommen.
+\ \\
+Mit einer weiteren Fehlerfortpflanzung folgt der Fehler der Dämpfungskonstante $\beta$
+
+\begin{align}
+\sigma_\beta=\sqrt{\sigma_\Lambda^2}
+\end{align}
+
+\subsection{Eigenfrequenz}
+Der Fehlerfortpflanzung der ungedämpften Eigenfrequenz lautet
+\begin{align}
+\sigma_{\omega_0} = \sqrt{\sigma_{\omega_e}^{2}\left(\frac{\omega_e}{\sqrt{\omega_e^{2}+\beta^{2}}}\right)^{2}+\sigma_\beta^{2}\left(\frac{\beta}{\sqrt{\omega_e^{2}+\beta^{2}}}\right)^{2}}
+\end{align}
+
+\subsection{Resonanzfrequenz}
+Die Gaußsche Fehlerfortpflanzung ergibt für die Resonanzfrequenz einen Fehler von
+\begin{align}
+\sigma_{\omega_r}=\sqrt{\sigma_{\omega_0}\frac{\omega_e}{\sqrt{\omega_e^{2}-2\beta^{2}}}+\sigma_\beta\frac{2\beta}{\sqrt{\omega_e^{2}-2\beta^{2}}}}
+\end{align}
+
+\subsection{Diskrete Fouriertransformation}
+Die DFT besitzt nur eine begrenzte Auflösung, die von der Anzahl der Messwerte $N$ und der Abtastzeit $t_a$ abhängt. Die Auflösung x berechnet sich zu
+\begin{align}
+x = \frac{1}{N t_a}
+\end{align}
+Zu den Frequenzen der DFT addiert sich somit ein Fehler in der Größe der halben Auflösung. In diesem Versuch ist $t_a = \SI{15,625}{ms}$.

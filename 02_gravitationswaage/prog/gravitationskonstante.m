@@ -1,0 +1,21 @@
+function [gamma,delta_gamma] = gravitationskonstante(phi,delta_phi,a,delta_a,b,delta_b,alpha,delta_alpha,r,delta_r,M,delta_M,T,delta_T)
+
+gamma = 4*pi^2*phi*(a^2+b^2-2*a*b*cos(alpha))^(3/2) * (a^2+(2/5)*r^2) / (a*b*M*sin(alpha)*T^2);
+
+%quadratische partielle Ableitungen
+dphi = 16*pi^4*(a^2+(2/5)*r^2)^2*csc(alpha)^2*(a^2-2*a*b*cos(alpha)+b^2)^3/(a^2*b^2*M^2*T^4);
+
+da = (-4*pi^2*phi*(a^2+(2/5)*r^2)*csc(alpha)*(a^2-2*a*b*cos(alpha)+b^2)^(3/2)/(a^2*b*M*T^2) + 6*pi^2*phi*(a^2+(2/5)*r^2)*csc(alpha)*(2*a-2*b*cos(alpha))*sqrt(a^2-2*a*b*cos(alpha)+b^2)/(a*b*M*T^2) + 8*pi^2*phi*csc(alpha)*(a^2-2*a*b*cos(alpha)+b^2)^(3/2)/(b*M*T^2))^2;
+
+db = (6*pi^2*phi*(a^2+(2/5)*r^2)*csc(alpha)*(2-2*a*cos(alpha))*sqrt(a^2-2*a*b*cos(alpha)+b^2)/(a*b*M*T^2) - 4*pi^2*phi*(a^2+(2/5)*r^2)*csc(alpha)*(a^2-2*a*b*cos(alpha)+b^2)^(3/2)/(a*b^2*M*T^2))^2;
+
+dM = 16*pi^4*phi^2*(a^2+(2/5)*r^2)^2*csc(alpha)^2*(a^2-2*a*b*cos(alpha)+b^2)^3/(a^2*b^2*M^4*T^4);
+
+dalpha = (12*pi^2*phi*(a^2+(2/5)*r^2)*sqrt(a^2-2*a*b*cos(alpha)+b^2)/(M*T^2) - 4*pi^2*phi*(a^2+(2/5)*r^2)*cot(alpha)*csc(alpha)*(a^2-2*a*b*cos(alpha)+b^2)^(3/2)/(a*b*M*T^2))^2;
+
+dT = 64*pi^4*phi^2*(a^2+(2/5)*r^2)^2*csc(alpha)^2*(a^2-2*a*b*cos(alpha)+b^2)^3/(a^2*b^2*M^2*T^6);
+
+dr = 256*pi^4*r^2*phi^2*csc(alpha)^2*(a^2-2*a*b*cos(alpha)+b^2)^3/(25*a^2*b^2*M^2*T^4);
+
+delta_gamma = sqrt(delta_phi^2*dphi+delta_a^2*da+delta_b^2*db+delta_M^2*dM+delta_alpha^2*dalpha+delta_T^2*dT+delta_r^2*dr);
+end

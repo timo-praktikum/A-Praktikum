@@ -1,0 +1,5 @@
+function [phi,sigma_phi] = auslenkungswinkel(y,sigma_y,l,sigma_l)
+
+
+
+end

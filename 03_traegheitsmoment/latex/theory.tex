@@ -1,0 +1,96 @@
+\section{Theorie}
+\subsection{Drehimpuls und Drehmoment}
+Betrachten wir einen starren Körper als Sytem von Massenpunkten mit Ortsvektoren $\vec{r}_i$ und den Einzelimpulsen $\vec{p}_i$. Dann ist der \textbf{Drehimpuls} $\vec{L}$ definiert als
+\begin{align}
+\vec{L}:=\sum\limits_{i}\vec{r}_i\times\vec{p}_i.
+\end{align}
+Die zeitliche Ableitung des Drehimpulses bezeichnet man als \textbf{Drehmoment}:
+\begin{align}
+\dot{\vec{L}}=\vec{M}
+\end{align}
+\subsection{Trägheitsmoment}
+Ein Massenelement $\Delta{m_i}$ eines mit der Winkelgeschwindigkeit $\omega$ rotierenden Körpers habe den Abstand $r_{i\perp}=\left|\vec{r}_i\right|$ von der Drehachse. Seine Geschwindigkeit $\vec{v}_i\perp\vec{r}_i$ ist
+\begin{align}
+\vec{v}_i=\vec{\omega}\times\vec{r}_i.
+\end{align}
+Die kinetische Energie eines solchen Elementes ist
+\begin{align}
+E_{kin}\left(\Delta{m_i}\right)=\frac{1}{2}\Delta{m_i}v^2_i=\frac{1}{2}\Delta{m_i}r^2_{i\perp}\omega^2
+\end{align}
+und die Rotationsenergie des Körpers ergibt sich durch Aufsummieren aller kinetischen Energien:
+\begin{align}
+E_{rot}&=\lim\limits_{\substack{n\to\infty\\\Delta{m_i}\to0}}\left(\frac{1}{2}\sum\limits_{i=1}^{N}\Delta{m_i}r^2_{i\perp}\omega^2\right)\nonumber\\
+&=\frac{1}{2}\omega^2\int \, r^2_{\perp}\, \mathrm{d}m
+\end{align}
+Das darin auftauchende Integral definiert man als \textbf{Trägheitsmoment}:
+\begin{align}
+\Theta:=\int\limits_{V} \, r^2_{\perp}\, \mathrm{d}m=\int\limits_{V} \, r^2_{\perp}\rho\, \mathrm{d}V
+\end{align}
+Dieses ist von der Rotationsachse abhängig, wobei es für jeden Körper drei \textbf{Hauptträgheitsmomente} $\Theta_A, \Theta_B, \Theta_C$ entlang der Hauptachsen gibt, aus denen sich für jede beliebige Achse das Trägheitsmoment berechnen lässt.\\
+Für die Drehimpulse entlang der Hauptachsen gilt
+\begin{align}
+L_A=\Theta_A\omega_A; \, L_B=\Theta_B\omega_B; \, L_C=\Theta_C\omega_C.
+\end{align}
+\subsection{Satz von Steiner}
+Kennt man das Trägheitsmoment einer durch den Schwerpunkt verlaufenden Achse A, so lässt sich daraus leicht das Trägheitsmoment einer parallelen Achse B berechnen. Dabei gilt der \textbf{Steinersche Satz}:
+\begin{align}
+I_B=I_A+a^2M\\
+a:=& \text{Abstand A-B}\nonumber\\
+M:=& \text{Gesamtmasse}\nonumber
+\end{align}
+\subsection{Bestimmung der Trägheitsmomente aus Drehschwingungen}
+Steht eine der Hauptträgheitsachsen (hier exemplarisch C) senkrecht auf der Rotationsachse, so gilt
+\begin{align}
+\label{eq:1}
+\Theta\omega^2=\vec{L}\cdot\vec{\omega}=\Theta_A\omega^2_A+\Theta_B\omega^2_B
+\end{align}
+Setzt man $\omega_A=\omega\cos{\alpha}, \, \omega_B=\omega\cos{\beta}$ in Gleichung \ref{eq:1} ein, erhält man die Ellipsengleichung
+\begin{align}
+\frac{\xi^2}{a^2}+\frac{\eta}{b^2}=1
+\end{align}
+mit $\Theta_A=\frac{1}{a^2}, \, \Theta_B=\frac{1}{b^2}, \, \xi=\frac{\cos{\alpha}}{\sqrt{\Theta}}, \, \eta=\frac{\cos{\beta}}{\sqrt{\Theta}}$. Kennt man also die Haupt- und Nebenachse der Ellipse, kann man daraus die Hauptträgheitsmomente berechnen.
+\subsection{Bestimmung des Trägheitsmomentes aus dem Drehmoment}
+Zur Bestimmung des Trägheitsmomentes kann ein Körper mit der zu untersuchenden Achse an einer Feder befestigt und die Schwingungsdauer der zugehörigen Drehschwingung gemessen werden. Bei Auslenkung um den Winkel $\varphi$ übt eine Spiralfeder das rücktreibende Drehmoment
+\begin{align}
+\label{eq:2}
+M=-D\varphi
+\end{align}
+aus. $D$ bezeichnet man als \textbf{Winkelrichtgröße} (oder Direktionsmoment). Gleichzeitig gilt
+\begin{align}
+\label{eq:3}
+M=\Theta\ddot{\varphi}.
+\end{align}
+Gleichsetzen von \ref{eq:2} und \ref{eq:3} ergibt eine Differentialgleichung, deren Lösung eine Beziehung zwischen Trägheitsmoment, Winkelrichtgröße und Schwingungsdauer liefert:
+\begin{align}
+\Theta=D\cdot\left(\frac{T}{2\pi}\right)^2
+\end{align}
+\subsection{Bestimmung des Trägheitsmomentes aus der Winkelbeschleunigung}
+An einem Rad sei ein Schwungrad befestigt, welches durch eine herabfallende Masse $m$ beschleunigt wird. Auf das Schwungrad wird dabei die Kraft $F=mg-ma'$ ausgeübt. Dadurch wirkt das Drehmoment
+\begin{align}
+T=mgr-ma'r
+\end{align}
+und man erhält für das Trägheitsmoment
+\begin{align}
+\Theta=\frac{mgrR-ma'rR}{a}.
+\end{align}
+Mit der Beziehung $\frac{a}{R}=\frac{a'}{r}$ ergibt sich
+\begin{align}
+\Theta=\frac{mgrR}{a}-mr^2
+\end{align}
+\subsection{Trägheitsmoment des Physikalischen Pendels}
+Wird das Pendel um kleine Winkel $\varphi$ ausgelenkt, wirkt näherungsweise die Rückstellkraft
+\begin{align}
+F_r=-m_kg\varphi
+\end{align}
+Einsetzen des Drehmomentes $M=-F_{r}r_s$ ergibt die Differentialgleichung
+\begin{align}
+\Theta\ddot{\varphi}=-r_sm_kg\varphi
+\end{align}
+Die Lösung liefert
+\begin{align}
+\Theta=\frac{T^2r_sm_kg}{4\pi^2}
+\end{align}
+Betrachten wir ein schwerpunktgelagertes Rad der Masse $m_r=m_k-m$ mit der Punktmasse $m$ im Abstand $z$ vom Mittelpunkt. Dann erhält man für das Trägheitsmoment des Rades
+\begin{align}
+\Theta_r=\frac{T^2zmg}{4\pi^2}-mz^2.
+\end{align}

@@ -1,0 +1,33 @@
+function [xn,delta_xn] = nullstellen(s)
+
+fid = fopen(s,'r');
+[m,nm] = fscanf(fid,'%u %f',[2,Inf]);
+fclose(fid);
+
+x = m(1,:); %Zeitvektor
+sigma_x = 0.25;
+y = m(2,:)./100; %Vektor der Messwerte
+sigma_y = 0.005;
+
+[offset_y,sigma_offset_y] = endeinstellung(s);
+
+y_c = y .- offset_y;
+sigma_y_c = sqrt(sigma_y^2 + sigma_offset_y^2);
+
+b = sign(y_c);
+n = find(b ~= [b(1) b(1: end - 1)]);
+
+yn = y_c(n);
+
+xdouble = [x(n-1);x(n)];
+
+%Bestwerte
+xn = mean(xdouble);
+%Mittlerer quadratischer Fehler der Einzelwerte
+delta_xi = sqrt((xdouble(1,:) .- xn).^2 .+ (xdouble(2,:) .- xn).^2);
+%Fehler der Bestwerte
+delta_xn = delta_xi;
+
+%plot(x,y_c,xn,yn,'or');
+
+end

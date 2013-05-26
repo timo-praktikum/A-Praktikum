@@ -1,0 +1,19 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.2}
+\contentsline {section}{\numberline {2}Theorie}{2}{section.3}
+\contentsline {subsection}{\numberline {2.1}Drehimpuls und Drehmoment}{2}{subsection.4}
+\contentsline {subsection}{\numberline {2.2}Tr\IeC {\"a}gheitsmoment}{2}{subsection.7}
+\contentsline {subsection}{\numberline {2.3}Satz von Steiner}{2}{subsection.13}
+\contentsline {subsection}{\numberline {2.4}Bestimmung der Tr\IeC {\"a}gheitsmomente aus Drehschwingungen}{3}{subsection.15}
+\contentsline {subsection}{\numberline {2.5}Bestimmung des Tr\IeC {\"a}gheitsmomentes aus dem Drehmoment}{3}{subsection.18}
+\contentsline {subsection}{\numberline {2.6}Bestimmung des Tr\IeC {\"a}gheitsmomentes aus der Winkelbeschleunigung}{3}{subsection.22}
+\contentsline {subsection}{\numberline {2.7}Tr\IeC {\"a}gheitsmoment des Physikalischen Pendels}{4}{subsection.26}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{5}{section.31}
+\contentsline {subsection}{\numberline {3.1}Versuchsteil A}{5}{subsection.32}
+\contentsline {subsubsection}{\numberline {3.1.1}Messung der K\IeC {\"o}rpereigenschaften}{5}{subsubsection.33}
+\contentsline {subsubsection}{\numberline {3.1.2}Vermessung der Drehschwingungen}{5}{subsubsection.35}
+\contentsline {subsection}{\numberline {3.2}Versuchsteil B}{5}{subsection.36}
+\contentsline {subsubsection}{\numberline {3.2.1}Messung der Winkelbeschleunigung}{5}{subsubsection.37}
+\contentsline {subsubsection}{\numberline {3.2.2}Physikalisches Pendel}{6}{subsubsection.38}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.39}
+\contentsline {section}{\numberline {5}Diskussion}{8}{section.40}

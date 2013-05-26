@@ -1,0 +1,65 @@
+% Festlegen des Dokumententyps
+\documentclass[a4paper,twoside]{article}
+
+% Papierformat
+\usepackage{a4}
+
+% Deutsche Sprache (Silbentrennung, usw.)
+\usepackage[ngerman]{babel}
+
+% Schrifteneinstellungen
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+% Kodierung
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+
+% bessere Matheunterstützung
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amsmath}
+
+% Einheiten in Formalen
+\usepackage{siunitx}
+\sisetup{%
+locale=DE,
+}
+
+% fuer Zitate
+\usepackage{cite}
+
+% Grafiken einbinden
+\usepackage{graphicx}
+
+
+% Verweise in PDF-Dateien
+\usepackage
+[colorlinks,
+pdfstartview = 1,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = true,
+hypertexnames = false,
+citecolor = black]{hyperref} 
+
+\newcommand{\e}{{\rm e}}
+
+\begin{document}
+
+\input{./title}
+\newpage
+%Seitennummerierung ausschalten
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+%Seitenzähler zurücksetzen
+\setcounter{page}{1}
+\input{./Auswertung}
+\newpage
+\thispagestyle{empty}
+% Festlegung Art der Zitierung - Havardmethode: Abkuerzung Autor + Jahr
+\bibliographystyle{plain}
+\end{document}
