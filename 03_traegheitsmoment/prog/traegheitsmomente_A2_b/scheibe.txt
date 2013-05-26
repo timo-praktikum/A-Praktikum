@@ -1,6 +1,0 @@
-%Durchmesser:[m]	Fehler:
-0.1630			0.00025
-%Dicke:[m]
-0.005			0.00025
-%Masse:[kg]
-0.407			0.001

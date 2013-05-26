@@ -1,5 +1,0 @@
-%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
-%Kugel		
-		1		10.99
-		2		10.89
-		3		11.20		

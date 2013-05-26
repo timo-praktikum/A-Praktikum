@@ -1,0 +1,41 @@
+reset
+unset border
+set polar
+set angles degrees
+origin  = 0 # Decided based on the min value of data set
+Max     = 50 # Decided based on the max value of data set
+xy_max  = (Max - origin) # Max value - Min value(origin) 
+
+set style line 10 lt 1 lc 0 lw 0.3
+
+set grid polar 15
+set grid ls 10
+
+set xtics axis
+set ytics axis
+
+set xtics scale 0
+#set xtics ("25" 25, "50" 50)
+#set ytics scale 0
+#set ytics ("25" 25, "50" 50)
+
+set xrange [-40:40]
+set yrange [-40:40]
+
+set label "0°" at xy_max+5 center
+set label "90°" at 0,xy_max+5 center
+set label "180°" at -xy_max-5 center 
+set label "270°" at 0,-xy_max-5 center
+
+set size 0.5,0.5
+
+set key outside
+
+set terminal epslatex
+set output '../latex/polar_diagram.tex'
+plot 'polar_data.mat' t "" w lp ls 11
+set output
+!epstopdf '../latex/polar_diagram.eps'
+
+set terminal x11
+replot

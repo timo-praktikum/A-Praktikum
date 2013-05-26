@@ -1,5 +1,0 @@
-%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
-%Scheibe		
-		1		17.14
-		2		17.20
-		3		16.99

@@ -1,5 +1,0 @@
-%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
-%Hantel		
-		1		20.19
-		2		20.11
-		3		20.13
