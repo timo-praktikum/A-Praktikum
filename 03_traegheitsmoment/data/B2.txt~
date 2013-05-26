@@ -1,0 +1,18 @@
+%Innenradius_Rad:[m]		Fehler:
+0.213				0.001
+%Abstand_Zentrum_Gewicht:[m]	
+0.155				0.001
+%Zylinder_Durchmesser:[m]	
+0.0335				0.00025
+%Zylinder_Höhe:[m]		
+0.034				0.00025
+%Radius_Rad_Schnur_außen:[m]		
+0.065				0.001
+%Radius_Rad_Schnur_innen:[m]
+0.06				0.001
+
+
+%10 Schwingungen:
+Gew_Pos:	Dauer:
+1		26.48
+2		26.70
