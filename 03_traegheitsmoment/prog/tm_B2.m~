@@ -1,0 +1,5 @@
+function [Theta,sigma_Theta] = tm_B2(T,sigma_T,g,sigma_g,z,sigma_z,m,sigma_m)
+
+
+
+end
