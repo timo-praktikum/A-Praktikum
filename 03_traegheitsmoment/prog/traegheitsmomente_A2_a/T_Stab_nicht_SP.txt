@@ -1,0 +1,5 @@
+%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
+%Stab_nicht_SP	
+		1		27.08
+		2		26.85
+		3		26.81

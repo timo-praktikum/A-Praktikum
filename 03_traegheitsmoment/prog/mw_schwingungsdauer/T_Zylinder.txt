@@ -1,0 +1,6 @@
+%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
+%Zylinder	
+		1		7.39
+		2		7.58
+		3		7.34
+		

@@ -1,0 +1,5 @@
+%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
+%Hohlzylinder	
+		1		10.72
+		2		10.88
+		3		10.80

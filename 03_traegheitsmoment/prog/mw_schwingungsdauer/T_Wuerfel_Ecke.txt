@@ -1,0 +1,5 @@
+%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen 
+%Würfel_Ecke	
+		1		9.91
+		2		9.66
+		3		9.74

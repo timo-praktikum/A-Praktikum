@@ -1,0 +1,8 @@
+%Außen-Durchmesser:[m]	Fehler:
+0.099			0.00025
+%Innen-Durchmesser:[m]	Fehler:
+0.0855			0.00025
+%Höhe:[m]
+0.0345			0.00025
+%Masse:[kg]
+0.256			0.001

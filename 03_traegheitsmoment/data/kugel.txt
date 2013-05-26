@@ -1,0 +1,4 @@
+%Umfang:[m]	Fehler:
+0.32		0.0005
+%Masse:[kg]
+0.477		0.001

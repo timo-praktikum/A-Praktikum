@@ -1,0 +1,6 @@
+%Länge:[m]		Fehler:
+0.5			0.00025
+%Abstand_Drehachse_SP:[m]	
+0.08			0.00025
+%Masse:[kg]
+0.162			0.001

@@ -1,0 +1,5 @@
+%Körper:	Messung:	Dauer:[s]		Fehler:			10 Schwingungen
+%Würfel_Fläche	
+		1		9.97
+		2		10.04
+		3		10.02
