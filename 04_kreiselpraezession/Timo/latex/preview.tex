@@ -1,16 +1,23 @@
 \documentclass[12pt]{article}
 
 \usepackage{graphics}
+\usepackage{tikz}
 \usepackage{gnuplottex}
 \usepackage{color}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\pgfrealjobname{preview}
+
+\newcommand{\inputTikZ}[1]{%
+    \input{#1.pgf}%
+  }
 
 \begin{document}
-
 \begin{figure}
-	\centering
-	\input{y-t_1}
-	\caption{freie gedämpfte Schwingung}
+	\begin{centering}
+		\inputTikZ{test}
+	\end{centering}
 \end{figure}
-
 \end{document}

@@ -1,0 +1,6 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.2}
+\contentsline {section}{\numberline {2}Theorie}{2}{section.3}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{3}{section.4}
+\contentsline {section}{\numberline {4}Auswertung}{4}{section.5}
+\contentsline {section}{\numberline {5}Diskussion}{5}{section.6}
