@@ -11,13 +11,13 @@
 \pgfrealjobname{preview}
 
 \newcommand{\inputTikZ}[1]{%
-    \input{#1.pgf}%
+    \resizebox{\textwidth}{!}{\input{#1.pgf}}%
   }
 
 \begin{document}
 \begin{figure}
 	\begin{centering}
-		\inputTikZ{test}
+		\inputTikZ{A3}
 	\end{centering}
 \end{figure}
 \end{document}

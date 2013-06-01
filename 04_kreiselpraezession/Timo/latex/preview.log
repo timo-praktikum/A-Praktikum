@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.31)  31 MAY 2013 20:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.31)  1 JUN 2013 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,9 +322,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \verbatim@out=\write4
-runsystem(touch /tmp/w18-test-20135311251)...disabled (restricted).
+runsystem(touch /tmp/w18-test-2013611258)...disabled (restricted).
 
-runsystem(rm -f /tmp/w18-test-20135311251)...disabled (restricted).
+runsystem(rm -f /tmp/w18-test-2013611258)...disabled (restricted).
 
 
 
@@ -476,64 +476,74 @@ e
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
-) (./test.pgf
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 110.
+) (./A3.pgf
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 594.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 450.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 808.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 450.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 808.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 450
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 808
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 450
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 808
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 450.
+(Font)              <12> on input line 808.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 450.
+(Font)              <8> on input line 808.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 450.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 450.
+(Font)              <6> on input line 808.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 808.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./preview.aux) ) 
+))
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./preview.aux) ) 
 Here is how much of TeX's memory you used:
- 10558 strings out of 495059
- 198636 string characters out of 3182030
- 243651 words of memory out of 3000000
- 13481 multiletter control sequences out of 15000+200000
- 21828 words of font info for 31 fonts, out of 3000000 for 9000
+ 10568 strings out of 495059
+ 198876 string characters out of 3182030
+ 249444 words of memory out of 3000000
+ 13491 multiletter control sequences out of 15000+200000
+ 24612 words of font info for 32 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,55p,420b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/us
-r/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf
-/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
+ 56i,8n,55p,420b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb>
-Output written on preview.pdf (1 page, 30336 bytes).
+Output written on preview.pdf (1 page, 40177 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
+ 29 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
