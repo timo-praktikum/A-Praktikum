@@ -1,0 +1,44 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nty}
+    \entry{IFA:Online}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=9fca146320aa3418a42658f7f394f0ed}{Arbeitsschutz\bibnamedelimb der\bibnamedelimb Deutschen\bibnamedelimb Gesetzlichen\bibnamedelimb Unfallversicherung\bibnamedelima (IFA)}{A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim (\bibinitperiod}{Institut}{I\bibinitperiod}{für}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9fca146320aa3418a42658f7f394f0ed}{Arbeitsschutz\bibnamedelimb der\bibnamedelimb Deutschen\bibnamedelimb Gesetzlichen\bibnamedelimb Unfallversicherung\bibnamedelima (IFA)}{A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim (\bibinitperiod}{Institut}{I\bibinitperiod}{für}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{9fca146320aa3418a42658f7f394f0ed}
+      \strng{fullhash}{9fca146320aa3418a42658f7f394f0ed}
+      \field{sortinit}{A}
+      \field{labeltitle}{GESTIS-Stoffdatenbank}
+      \field{title}{GESTIS-Stoffdatenbank}
+      \field{urlday}{13}
+      \field{urlmonth}{06}
+      \field{urlyear}{2013}
+      \verb{url}
+      \verb http://www.dguv.de/ifa/de/gestis/stoffdb/index.jsp
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

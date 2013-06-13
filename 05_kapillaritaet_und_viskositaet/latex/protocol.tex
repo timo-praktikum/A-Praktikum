@@ -7,6 +7,7 @@
 
 % Deutsche Sprache (Silbentrennung, usw.)
 \usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
 
 % Schrifteneinstellungen
 \usepackage{lmodern}
@@ -14,7 +15,7 @@
 \usepackage{textcomp}
 
 % Kodierung
-\usepackage{ucs}
+%\usepackage{ucs}
 \usepackage[utf8]{inputenc}
 
 % bessere Matheunterstützung
@@ -22,7 +23,7 @@
 \usepackage{amstext}
 \usepackage{amsmath}
 
-% Einheiten in Formalen
+% Einheiten in Formalen0
 \usepackage{siunitx}
 \sisetup{%
 locale=DE,
@@ -30,9 +31,8 @@ scientific-notation = true,
 }
 
 % fuer Zitate
-\usepackage{cite}
-\usepackage{natbib}
-\usepackage{url}
+\usepackage[natbib=true,style=numeric]{biblatex}
+\bibliography{literature}
 
 % Grafiken einbinden
 \usepackage{graphicx}
@@ -85,8 +85,7 @@ citecolor = black]{hyperref}
 \newpage
 \thispagestyle{empty}
 % Festlegung Art der Zitierung - Havardmethode: Abkuerzung Autor + Jahr
-\bibliography{literature}
-\bibliographystyle{plainnat}
+\printbibliography
 \appendix
 \section{Messwerte (Original)}
 \end{document}
