@@ -1,2 +1,138 @@
 \section{Theorie}
-
+\subsection{Trägheitsmoment des physikalischen Pendels}
+Bringt man an einem Rad, welches frei an einer Achse gelagert ist, ein zusätzliches Gewicht $m$ im Abstand $z$ vom Mittelpunkt an, so bildet der Körper ein physikalisches Pendel. Wird das Pendel der Masse $m_k$ um kleine Winkel $\varphi$ ausgelenkt, wirkt näherungsweise die Rückstellkraft
+\begin{align}
+F_r=-m_kg\varphi
+\end{align}
+Einsetzen des Drehmomentes $M=-F_{r}r_s$ ergibt die Differentialgleichung
+\begin{align}
+I\ddot{\varphi}=-r_sm_kg\varphi
+\end{align}
+Die Lösung liefert
+\begin{align}
+I=\frac{T^2r_sm_kg}{4\pi^2}\,\, \text{(\cite{Nolting2011})}
+\end{align}
+Mit der Schwerpunktsverschiebung $r_s=zm/M$ und der Gesamtmasse $M=m_k+m$ erhält man schließlich
+\begin{align}
+I_r=\frac{T^2zmg}{4\pi^2}-mz^2.
+\label{eq:4}
+\end{align}
+Dabei ist der zweite Term das abgezogene Trägheitsmoment des Zusatzgewichtes.
+\subsection{Der Kreisel}
+Hält man einen starren Körper an einem Raumpunkt fest, so verbleiben ihm nur noch die drei Rotationsfreiheitsgrade. Einen solchen Körper nennt man Kreisel, wobei man zwischen \textit{symmetrischen} (mindestens zwei Hauptträgheitsmomente sind gleich) und \textit{asymmetrischen} Kreiseln unterscheidet. Wirkt auf einen Körper kein äußeres Drehmoment, so nennt man ihn \textit{kräftefrei}. Ein Kreisel ist beispielsweise kräftfrei, wenn er in seinem Massenschwerpunkt aufgehängt wird, sodass zwar eine Gravitationskraft wirkt, diese jedoch kein Drehmoment ausüben kann.(\cite{Demtroeder2008}) Im Folgenden werden symmetrische Kreisel mit und ohne äußeres Drehmoment betrachtet.\\
+Die Gesetze des Kreisels leiten sich aus der Drehimpulserhaltung\newpage
+{
+	\setlength{\belowdisplayskip}{0pt}
+    \setlength{\belowdisplayshortskip}{0pt}	
+	\begin{align}
+	\dot{\vec{L}}=I\cdot\dot{\vec{\omega}}=\vec{M}
+	\end{align}
+}
+{\footnotesize
+	\setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{6pt}
+    \setlength{\abovedisplayshortskip}{0pt}
+    \setlength{\belowdisplayshortskip}{3pt}
+	\begin{flalign*}
+		L&:=\text{Drehimpuls}&\\
+		I&:=\text{Trägheitsmoment}&\\
+		\omega&:=\text{Kreisfrequenz}&\\
+		M&:=\text{Drehmoment}&
+	\end{flalign*}
+}%
+ab. Die Bewegung des Kreisels wird im allgemeinen im raumfesten Bezugssystem beschrieben, wobei gilt
+\begin{align}
+\dot{\vec{L}}_{Raum}=\vec{M}=\dot{\vec{L}}_{Körper}+\vec{\omega}\times\vec{\L}\,\, \text{(\cite{Demtroeder2008})}.
+\end{align}
+%
+Dabei ist $\omega$ die Geschwindigkeit, mit der der Körper gegen das raumfeste System rotiert. Schreibt man die Komponenten dieser Gleichung aus, erhält man die \textit{Eulerschen Kreiselgleichungen}, welche die Grundlage für die Beschreibung von Kreiselbewegungen bilden.\\
+Zur Beschreibung des kräftefreien symmetrischen Kreisels unterscheidet man drei Achsen (vgl. Abb. \ref{img:1}):
+%
+\begin{figure}[ht]
+\begin{minipage}[c]{0.45\linewidth}
+\begin{itemize}
+\item Die raumfeste Drehimpulsachse
+\item Die momentane Rotationsachse
+\item Die körperfeste Figurenachse (meistens Symmetrie- und Hauptträgheitsachse).
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[c]{0.45\linewidth}
+\centering
+\resizebox{\textwidth}{!}{\input{kreiselachsen.pdf_tex}}
+\caption{Festlegung der drei Kreiselachsen}
+\label{img:1}
+\end{minipage}
+\end{figure}
+%
+\subsection{Trägheitsmoment des Kreisels}
+Aus der Definition des Trägheitsmomentes
+\begin{align}
+I:=\int\limits_{V} \, r^2_{\perp}\, \mathrm{d}m
+\end{align}
+folgt für einen Zylinder, der um seine Symmetrieachse rotiert (entspricht dem Trägheitsmoment des Rades entlang der horizontalen Achse)
+\begin{align}
+	I_{\text{hor}}=\frac{1}{2}Mr^2\, \text{(\cite{Demtroeder2008})}
+	\label{eq:5}
+\end{align}
+mit Radius $r$ und Masse $M$.\\
+Für die Rotation um eine Querachse erhält man
+\begin{align}
+	I_z=\frac{1}{4}mr^2+\frac{1}{12}ml^2\, \text{(\cite{Spiegel1999})}
+\end{align}
+mit der Zylinderdicke $h$. Beim betrachteten Kreisel ist die Drehachse um $z_R$ vom Schwerpunkt des Rades entfernt und an der gleichen Achse befindet sich ein Ausgleichsgewicht $m_a$ im Abstand $z_a$ von der Drehachse (vgl. Abb. \ref{img:3}). Damit erhält man unter Anwendung des Steinerschen Satzes (z. B. \cite{Nolting2011}) für das Trägheitsmoment des Kreisels entlang der vertikalen Achse:
+\begin{align}
+	I_{\text{ver}}=\frac{1}{4}mr^2+\frac{1}{12}mh^2+m{z_R}^2+m_a{z_a}^2,
+	\label{eq:6}
+\end{align}
+wobei der Beitrag des Stabes (vertikale Achse) vernachlässigt wird.
+%
+\subsection{Präzession}
+Wird auf einen rotierenden Kreisel ein äußeres Drehmoment $\vec{M}$ ausgeübt, so ändert dies aufgrund $\vec{M}=\dot{\vec{L}}$ die Richtung des Drehimpulses. Solange das Drehmoment senkrecht wirkt, bleibt der Betrag des Drehimpulses erhalten. Die entstehende Ausweichbewegung zu einer Achse senkrecht zum Drehmoment bezeichnet man als \textit{Präzession} (vgl. Abb. \ref{img:2}, S. \pageref{img:2}).\\
+Es soll nun ein kräftefreier symmetrisches Kreisel betrachtet werden, an den ein Zusatzgewicht $m_z$ angehängt wird. Dieses verlagert den Schwerpunkt des Kreisels und übt durch die Gewichtskraft $\vec{F}_g=m_z\cdot\vec{g}$ ein Drehmoment 
+\begin{align}
+\vec{M}=\vec{r}\times m_z\vec{g}\, \Rightarrow\, M=rm_zg\cdot\sin\theta
+\label{eq:1}
+\end{align}
+auf die Drehimpulsachse aus. Dabei ist $\vec{r}$ der Vektor vom Unterstützungspunkt des Kreisels zum Angriffspunkt der Schwerkraft (also der Punkt, an dem das Zusatzgewicht angehängt wird).\\
+In der Zeit $\mathrm dt$ dreht sich $\vec{L}$ um den Winkel $\mathrm d\varphi=\frac{\mathrm dL}{L\sin\theta}$ mit der Präzessionsgeschwindigkeit 
+\begin{align}
+\omega_P=\frac{\mathrm d\varphi}{\mathrm dt}=\frac{M}{L\sin\theta}.
+\label{eq:2}
+\end{align}
+Dabei ist $L\sin\theta$ der Radius der Präzessionsbewegung.\\
+Setzt man $L=I\omega_R$ und Gleichung (\ref{eq:1}) in Gleichung (\ref{eq:2}) ein, fällt die Winkelabhängigkeit heraus und man erhält
+\begin{align}
+\omega_P=\frac{m_zgr}{I\omega_K}
+\label{eq:3}
+\end{align}
+mit dem Trägheitsmoment $I$ und der Rotationsgeschwindigkeit $\omega_R$ des Kreisels.(\cite{Demtroeder2008})\\
+Sind $\omega_R$ und $\omega_P$ durch Messung bekannt, so kann der Faktor $\frac{m_zgr}{I}$ mittels linearer Regression bestimmt werden, um daraus das Trägheitsmoment zu berechnen.
+%
+\subsection{Nutation}
+Wirkt auf einen rotierenden Kreisel ein Stoß ein, so wird die Figurenachse gegen die Rotationsachse ausgelenkt und vollführt eine sogenannte \textit{Nutationsbewegung} (vgl. Abb. \ref{img:2}) auf einem Kegel um die Drehimpulsachse. Gleichzeitig bewegt sich auch die Rotationsachse auf einem anderen Kegel um die Drehimpulsachse.
+\begin{figure}[!htbp]
+\centering
+\resizebox{0.5\textwidth}{!}{\input{praezession_nutation.pdf_tex}}
+\caption{Rotation $\omega_R$, Präzession $\omega_P$ und Nutation $\omega_N$ eines Kreisels}
+\label{img:2}
+\end{figure}
+%
+\begin{figure}[!htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{nutation.pdf_tex}}
+\caption{Nutation}
+\label{img:6}
+\end{figure}
+%
+Die Winkelgeschwindigkeit $\omega$ lässt sich wie in Abbildung \ref{img:6} in zwei zueinander senkrechte Komponenten aufteilen. Aus der Abbildung leitet man ab:
+\begin{align}
+	\omega_N&=\frac{\omega_{N_z}}{\sin\theta}=\frac{L_z}{I_x}\cdot\frac{1}{\sin\theta}\nonumber\\
+	&=\frac{L_x}{I_z}\cdot\frac{1}{\cos\theta}=\frac{I_x}{I_z}\cdot\frac{\omega}{\cos\theta},
+\end{align}
+was sich für kleine Winkel ($\cos\theta\approx1$) zu
+\begin{align}
+	\omega_N\approx\frac{I_x}{I_z}\cdot\omega
+	\label{eq:7}
+\end{align}
+vereinfacht.

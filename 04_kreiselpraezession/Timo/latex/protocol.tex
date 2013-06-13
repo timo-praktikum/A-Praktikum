@@ -1,5 +1,6 @@
 % Festlegen des Dokumententyps
 \documentclass[a4paper,twoside]{scrartcl}
+\addtokomafont{caption}{\footnotesize}
 
 % Papierformat
 \usepackage{a4}
@@ -25,14 +26,22 @@
 \usepackage{siunitx}
 \sisetup{%
 locale=DE,
+scientific-notation = true,
 }
 
 % fuer Zitate
 \usepackage{cite}
+\usepackage{natbib}
+\usepackage{url}
 
 % Grafiken einbinden
 \usepackage{graphicx}
 
+% Grafiken Position erzwingen
+\usepackage{here}
+
+% Tabellen
+\usepackage{booktabs}
 
 % Verweise in PDF-Dateien
 \usepackage
@@ -44,6 +53,13 @@ linkcolor = black,
 plainpages = true,
 hypertexnames = false,
 citecolor = black]{hyperref} 
+
+% PGF einbinden
+\usepackage{tikz}
+\pgfrealjobname{protocol}
+\newcommand{\inputTikZ}[1]{%
+    \resizebox{\textwidth}{!}{\input{#1.pgf}}%
+  }
 
 \newcommand{\e}{{\rm e}}
 
@@ -58,16 +74,19 @@ citecolor = black]{hyperref}
 %Seitenzähler zurücksetzen
 \setcounter{page}{1}
 \input{./introduction}
-\newpage
+%\newpage
 \input{./theory}
-\newpage
+%\newpage
 \input{./execution}
-\newpage
+%\newpage
 \input{./evaluation}
-\newpage
+%\newpage
 \input{./discussion}
 \newpage
 \thispagestyle{empty}
 % Festlegung Art der Zitierung - Havardmethode: Abkuerzung Autor + Jahr
-\bibliographystyle{plain}
+\bibliography{literature}
+\bibliographystyle{plainnat}
+\appendix
+\section{Messwerte (Original)}
 \end{document}

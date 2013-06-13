@@ -1,3 +1,31 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Demtroeder(2008)]{Demtroeder2008}
+Wolfgang Demtroeder.
+\newblock \emph{Experimentalphysik 1 - Mechanik und Wärme}.
+\newblock Springer DE, Berlin, 2008.
+\newblock ISBN 354-0-792-953-.
+
+\bibitem[Lindau(2013)]{PTB:2006:Misc}
+Andreas Lindau.
+\newblock Gravity information system of ptb, June 2013.
+\newblock URL \url{http://www.ptb.de/cartoweb3/SISproject.php}.
+
+\bibitem[Nolting(2011)]{Nolting2011}
+Wolfgang Nolting.
+\newblock \emph{Grundkurs Theoretische Physik 1 - Klassische Mechanik}.
+\newblock Springer DE, Berlin, 2011.
+\newblock ISBN 364-2-129-48X-.
+
+\bibitem[Spiegel and Liu(1999)]{Spiegel1999}
+Murray~R. Spiegel and John~X. Liu.
+\newblock \emph{Mathematical Handbook of Formulas and Tables -}.
+\newblock McGraw-Hill Education, New York, 2nd edition edition, 1999.
+\newblock ISBN 978-0-071-16765-9.
 
 \end{thebibliography}

@@ -1,2 +1,185 @@
 \section{Auswertung}
-
+Die Messung der Parameter des Versuchsaufbaus ergab folgende Werte:
+%
+\begin{table}[!htbp]
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}@{}}
+      \toprule
+        Raddurchmesser $d$ & \SI{0,245}{\m} \\
+        Raddicke $h$ & \SI{0,028}{\m} \\
+        Radmasse $M$ & \SI{1,324}{\kg} \\
+        Länge des Stabs (Achse) $L$ & \SI{0,501\pm0,002}{\m} \\
+        Durchmesser des Ausgleichsgewichtes $d_a$ & \SI{0,06\pm0,00025}{\m} \\
+        Dicke des Ausgleichsgewichtes $h_a$ & \SI{0,00425\pm0,00025}{\m} \\
+        Masse des Ausgleichsgewichtes $m_a$ & \SI{0,938}{\kg} \\
+        Abstand Ausgleichsgewicht-Rotationsachse $l_a$ & \SI{0,142\pm0,001}{\m} \\
+        Abstand Rotationsachse-Kerbe (für Zusatzgewicht) $r$ & \SI{0,2705\pm0,0005}{\m} \\
+      \bottomrule
+    \end{tabular}
+  \caption{Daten der Versuchsanordnung}
+  \label{tab:1}
+\end{table}\ \\
+%
+Damit berechnet man gemäß Gleichung (\ref{eq:5}) das Trägheitsmoment des Rades um die horizontale Achse:
+\begin{align*}
+	I_{\text{hor}}=\SI{0,00993}{\kg\m\squared}.
+\end{align*}
+Analog kann mit Gleichung (\ref{eq:6}) das Trägheitsmoment entlang der vertikalen Achse berechnet werden. Dazu muss zunächst der Abstand des Schwerpunkts des Ausgleichsgewichtes zur Drehachse bestimmt werden:
+\begin{align*}
+	z_a&=l_a+\frac{h_a}{2}\,, &\sigma_{z_a}&=\sqrt{\sigma_{l_a}^2+\frac{1}{4}\sigma_{h_a}^2}\\
+	\Rightarrow z_a&=\SI{0.1633\pm0.0011}{\m}
+\end{align*}
+Außerdem muss der Abstand $z_R$ des Rades (im Schwerpunkt) von der Drehachse über den Schwerpunktsatz (z. B. \cite{Nolting2011}) berechnet werden, da dieser nicht direkt gemessen wurde. Es gilt:
+\begin{align*}
+	z_R&=\frac{m_a}{M} \cdot z_a\,, &\sigma_{z_R}&=\frac{m_a}{M} \cdot \sigma_{z_a}\\
+	\Rightarrow z_R&=\SI{0.1157\pm0.0008}{\m}
+\end{align*}
+und man erhält für das Trägheitsmoment entlang der vertikalen Achse
+\begin{align*}
+	I_{\text{ver}}=\SI{0.0477\pm0.0005}{\kg\m\squared}
+\end{align*}
+mit dem Fehler 
+\begin{align*}
+	\sigma_{I_{\text{ver}}}=\sqrt{{\sigma_{z_R}}4m^2{z_R}^2+{\sigma_{z_a}}4{m_a}^2{z_a}^2}
+\end{align*}
+aus dem Fehlerfortpflanzungsgesetz.
+%
+\subsection{Physikalisches Pendel}
+Mit Gleichung (\ref{eq:4})
+\begin{align*}
+	I_r&=\frac{T^2zmg}{4\pi^2}-mz^2\,, &\sigma_{I_r}&=\sigma_T\cdot\frac{Tzmg}{2\pi^2}%
+\end{align*}
+kann aus den gemessenen Schwingungsdauern jeweils das Trägheitsmoment berechnet werden. Das Zusatzgewicht hat die Masse $m=\SI{0,1}{\kg}$, für die Gravitationsbeschleunigung wird der Wert $g=\SI{9,8116}{\m\per\s\squared}$ (\cite{PTB:2006:Misc}) verwendet. Damit berechnet man folgende Werte:
+%
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}@{}}
+      \toprule
+      	Messung Nr. & Trägheitsmoment $I$ \\
+      \midrule
+        1 & \SI{8,4\pm0,1e-3}{\kg\m\squared} \\
+        2 & \SI{8,4\pm0,1e-3}{\kg\m\squared} \\
+        3 & \SI{8,6\pm0,1e-3}{\kg\m\squared} \\
+       \cmidrule(rl){1-2}
+        4 & \SI{8,6\pm0,1e-3}{\kg\m\squared} \\
+        5 & \SI{8,5\pm0,1e-3}{\kg\m\squared} \\
+        6 & \SI{8,6\pm0,1e-3}{\kg\m\squared} \\
+      \midrule
+      	Mittelwert & \SI{8,51\pm0,05e-3}{\kg\m\squared} \\
+      \bottomrule
+    \end{tabular}
+  \caption{Aus der Schwingungsdauer des Pendels berechnete Trägheitsmomente}
+  \label{tab:3}
+\end{table}\ \\
+%
+Dabei wurde als Fehler der Schwingungsdauer $T$ die Standardabweichung $s_T=\SI{0,009}{\s}$ verwendet.
+%
+\subsection{Präzession}
+Bei der Präzessionsmessung wurden die Rotationsperiode $T_R$ und die halbe Präzessionsperiode $T_P/2$ gemessen. Daraus können über
+\begin{align*}
+	\omega_R&=\frac{2\pi}{T_R}\,, &\sigma_{\omega_R}&=\sigma_{T_R}\cdot\frac{2\pi}{{T_R}^2}\\
+	\omega_P&=\frac{\pi}{\left(\frac{T_P}{2}\right)}\,, &\sigma_{\omega_P}&=\sigma_{\frac{T_P}{2}}\cdot\frac{\pi}{\left(\frac{T_P}{2}\right)^2}
+\end{align*}
+die Rotationsfrequenz $\omega_R$ und die Präzessionsfrequenz $\omega_P$ berechnet werden. Mit Gleichung (\ref{eq:3}) kann daraus mittels linearer Regression die Konstante $\frac{m_zgr}{I}$ bestimmt werden (vgl. Abb. \ref{img:4}). Da $T_P$ und $T_R$ nicht gleichzeitig gemessen wurden, wird für $\omega_R$ als Näherung der Mittelwert der Werte vor und nach der Präzession verwendet:
+%
+\begin{align*}
+	\bar{\omega}_R&=\frac{\omega_{R,\text{vor}}+\omega_{R,\text{nach}}}{2}\,, &\sigma_{\bar{\omega}_R}&=\frac{\sigma_{\omega_{R,\text{vor}}}+\sigma_{\omega_{R,\text{nach}}}}{2}
+\end{align*}
+%
+Aus der Steigung $x$ der Regressionsgeraden kann schließlich über die Beziehung
+\begin{align*}
+	x=\frac{mgr}{I} \Leftrightarrow I&=\frac{mgr}{x}\,, &\sigma_I&=\frac{mg}{x}\cdot\sqrt{{\sigma_r}^2+{\sigma_x}^2\frac{r^2}{x^2}}
+\end{align*}
+auf das Trägheitsmoment I geschlossen werden (vgl. Tabelle \ref{tab:2}).
+%
+\begin{figure}[H]
+	\begin{centering}
+		\inputTikZ{A3}
+	\end{centering}
+	\caption{Darstellung der Messdaten mit linearer Regression}
+	\label{img:4}
+\end{figure}
+%
+\begin{table}[H]
+    \sisetup{scientific-notation = false,}
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}{r}{r}@{}}
+      \toprule
+      	Zusatzgewicht $m_z$ & $\frac{m_zgr}{I}$ & Korrelation $r^2$ & Trägheitsmoment $I$\\
+      \midrule
+        $\SI{20}{\g}$ & \SI{6,4\pm0,3}{\per\s\squared} & $0.996$ & \SI{8,3\pm0,4e-3}{\kg\m\squared} \\
+        $\SI{40}{\g}$ & \SI{11,6\pm0,8}{\per\s\squared} & $0,998$ & \SI{9,1\pm0,6e-3}{\kg\m\squared} \\
+        $\SI{60}{\g}$ & \SI{17,7\pm1,4}{\per\s\squared} & $0,992$ & \SI{9,0\pm0,7e-3}{\kg\m\squared} \\
+      \bottomrule
+    \end{tabular}%
+  \caption{Ergebnisse der linearen Regression}
+  \label{tab:2}
+  \sisetup{scientific-notation = true,}
+\end{table}
+%
+Der gewichtete Mittelwert beträgt \mbox{$\bar{I}=\SI{8,57\pm0,27e-3}{\kg\m\squared}$}. Dabei wurde für die Messung der Präzessionsperiode ein Fehler von $\sigma_{\frac{T_P}{2}}=\SI{0,5}{\s}$ angenommen.
+%
+\subsection{Vergleich der Ergebnisse}
+Tabelle \ref{tab:5} fasst die bisherigen Ergebnisse zusammen:
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}@{}}
+      \toprule
+      	Methode & $I_{\text{hor}}$ \\
+      \midrule
+        Berechnung aus Versuchsparametern & \SI{0,00993}{\kg\m\squared} \\
+        Physikalisches Pendel & \SI{8,51\pm0,05e-3}{\kg\m\squared} \\
+        Präzessionsmessung & \SI{8,57\pm0,27e-3}{\kg\m\squared} \\
+      \bottomrule
+    \end{tabular}%
+  \caption{Zusammenfassung der Ergebnisse für das Trägheitsmoment des Kreisels um die horizontale Achse}
+  \label{tab:5}
+\end{table}\ \\
+%
+Der mit dem Pendel bestimmte Wert liegt im Fehlerintervall der Präzessionsmessung und beide weichen vom ersten Wert um etwa 14\% nach unten ab.
+%
+\subsection{Nutation}
+Aus der Rotationsperiode $T_R$ und der Nutationsperiode über zehn Schwingungen $10T_N$ aus der Nutationsmessung erhält man die Frequenzen
+%
+\begin{align*}
+	\omega_R&=\frac{2\pi}{T_R}\,, &\sigma_{\omega_R}&=\sigma_{T_R}\cdot\frac{2\pi}{{T_R}^2}\\
+	\omega_N&=\frac{20\pi}{10T_N}\,, &\sigma_{\omega_N}&=\sigma_{T_N}\cdot\frac{20\pi}{\left(10T_N\right)^2}
+\end{align*}
+%
+\begin{figure}[H]
+	\begin{centering}
+		\inputTikZ{A5}
+	\end{centering}
+	\caption{Darstellung der Messdaten mit linearer Regression}
+	\label{img:5}
+\end{figure}
+%
+Trägt man $\omega_N$ gegen $\omega_R$ auf, so entspricht die Steigung nach Gleichung (\ref{eq:7}) dem Verhältnis $\frac{I_{\text{hor}}}{I_{\text{ver}}}$ (vgl. Abb. \ref{img:5}). Die Ergebnisse sind in Tabelle \ref{tab:4} aufgetragen. Wie bei der Präzession wurde für die Messung der Schwingungsdauer ein Fehler von $\sigma_{T_N}=\SI{0,5}{\s}$ angenommen.
+%
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}{r}@{}}
+      \toprule
+      	Messung Nr. & $\frac{I_{\text{hor}}}{I_{\text{ver}}}$ & Korrelation $r^2$\\
+      \midrule
+        1 & \SI{0,13\pm0,05}{} & $0,996$ \\
+        2 & \SI{0,15\pm0,06}{} & $0,998$ \\
+        3 & \SI{0,16\pm0,06}{} & $0,992$ \\
+      \cmidrule{1-2}
+      	Mittelwert & \SI{0,15\pm0,04}{} & \\
+      \bottomrule
+    \end{tabular}%
+  \caption{Ergebnisse der linearen Regression}
+  \label{tab:4}
+\end{table}\ \\
+%
+Der nach dem ersten Teil der Auswertung erwartete Wert ist
+\begin{align*}
+	\frac{I_{\text{hor}}}{I_{\text{ver}}}=\SI{0,20817610\pm0,00000002}{}.
+\end{align*}
+Die Abweichung von diesem Wert beträgt ca. 28\%.

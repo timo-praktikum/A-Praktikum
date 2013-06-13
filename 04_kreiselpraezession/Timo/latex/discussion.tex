@@ -1,1 +1,33 @@
 \section{Diskussion}
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \begin{tabular}{@{}{l}{r}{l}@{$\,=\,$}{l}@{}}
+      \toprule
+      	Methode & & \multicolumn{2}{l}{Trägheitsmoment} \\
+      \midrule
+        \multicolumn{2}{l}{Berechnung aus Versuchsparametern} & \multicolumn{2}{c}{} \\
+      	 & horizontal & $I_{\text{hor}}$ & $\SI{0,00993}{\kg\m\squared}$ \\
+      	 & vertikal & $I_{\text{ver}}$ & $\SI{0.0477\pm0.0005}{\kg\m\squared}$ \\
+      \cmidrule{3-4}
+      	 & & $\frac{I_{\text{hor}}}{I_{\text{ver}}}$ & $\SI{0,20817610\pm0,00000002}{}$ \\
+      \midrule
+        \multicolumn{2}{l}{Physikalisches Pendel} & $I_{\text{hor}}$ & $\SI{8,51\pm0,05e-3}{\kg\m\squared}$ \\
+      \midrule
+        \multicolumn{2}{l}{Präzessionsmessung} & $I_{\text{hor}}$ & $\SI{8,57\pm0,27e-3}{\kg\m\squared}$ \\
+      \midrule
+        \multicolumn{2}{l}{Nutationsmessung} & $\frac{I_{\text{hor}}}{I_{\text{ver}}}$ & $\SI{0,15\pm0,04}{}$ \\
+      \bottomrule
+    \end{tabular}%
+  \caption{Zusammenfassung der Ergebnisse der Auswertung}
+  \label{tab:6}
+\end{table}
+Der allein mit den Versuchsparametern berechnete Wert für $I_{\text{hor}}$ musste ohne Fehlerintervalle berechnet werden, da zu den Angaben am Versuchsaufbau keine Fehler bekannt sind. Trotzdem sollte dies der theoretisch beste Wert sein, da die Fehler im Vergleich zu den anderen Messmethoden eher klein ausfallen sollten und keine Störeinflüsse die Messung verfälscht haben können.\\
+Bei den beiden Werten, die mit dem Pendel und der Präzession gemessen wurden, fällt auf, dass diese zwar gut übereinstimmen, jedoch merklich unter dem erwarteten Wert liegen (vgl. Tab. \ref{tab:6}). Auch die Fehlerintervalle der größten Einzelwerte liegen außerhalb dieses Wertes. Ob hier ein systematischer Fehler vorliegt kann nicht mit Sicherheit gesagt werden, da bei der Berechnung mehrere Vereinfachungen vorgenommen wurden:
+\begin{itemize}
+	\item \textit{Physikalisches Pendel}: Die verwendete Gleichung gilt nur für kleine Auslenkungswinkel. Zudem wurden 												  die Dämpfung durch Reibung im Lager und die Luftreibung nicht berücksichtigt. 											  Auch wurde das Zusatzgewicht als am Rand des Rades konzentrierte Punktmasse 												  betrachtet, obwohl der Schwerpunkt der Masse tatsächlich weiter außen lag.
+	\item \textit{Präzessionsmessung}: Wie beim Pendel wurde keine Reibung berücksichtigt. Der Beitrag des Stabes zum 						  					   Trägheitsmoment wurde vernachlässigt. Außerdem ist die Messung der 														   Präzessionsperiode zwangsläufig ungenau, da die gesamte Messung sehr schnell 											   erfolgen muss, um genügend Messpunkte aufzunehmen, bevor das Zusatzgewicht den 											   Boden berührt.
+\end{itemize}
+Dies könnte durchaus den nötigen Fehler von etwa 16\% rechtfertigen.\\
+Bei der Nutationsmessung liegt der erwartete Wert nur knapp außerhalb des Fehlerintervalls, obwohl das Messverfahren relativ unpräzise wirkt: Die Nutationsperiode muss manuell per Stoppuhr gemessen werden, während die Rotationsfrequenz möglichst groß und der Auslenkungswinkel möglichst klein (um die Kleinwinkelnäherung zu begründen, vgl. Gleichung (\ref{eq:7})) sein sollten. Tatsächlich scheint hier relativ gut gemessen worden zu sein, denn auch die lineare Regression zeigt eine gute Korrelation (vgl. Tab. \ref{tab:4}).\\
+Insgesamt sind die Ergebnisse im Rahmen der Messgenauigkeit durchaus zufriedenstellend, wobei die angegebenen Fehler offensichtlich noch nach oben korrigiert werden sollten.

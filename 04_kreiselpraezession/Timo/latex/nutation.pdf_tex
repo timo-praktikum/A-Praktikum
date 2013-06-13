@@ -1,0 +1,63 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'nutation.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{401.1703125bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.55309271)%
+    \put(0,0){\includegraphics[width=\unitlength]{nutation.pdf}}%
+    \put(0.80165453,0.00829604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $x$}}}%
+    \put(0.04387164,0.52279074){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $z$}}}%
+    \put(0.52645969,0.27152589){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $\vec{L}$}}}%
+    \put(0.29114816,0.1319343){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $\vec{\omega_N}$}}}%
+    \put(0.24328819,0.01228437){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $\omega$}}}%
+    \put(0.44669307,0.01228437){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $I_x\omega$}}}%
+    \put(0.03190665,0.1319343){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $\omega_{N_z}$}}}%
+    \put(0,0.27950255){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $I_z\omega_{N_z}$}}}%
+    \put(0.12762659,0.05615601){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\large $\theta$}}}%
+  \end{picture}%
+\endgroup%

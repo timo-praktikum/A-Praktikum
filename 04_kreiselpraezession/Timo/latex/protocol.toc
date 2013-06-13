@@ -1,6 +1,19 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.2}
-\contentsline {section}{\numberline {2}Theorie}{2}{section.3}
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{3}{section.4}
-\contentsline {section}{\numberline {4}Auswertung}{4}{section.5}
-\contentsline {section}{\numberline {5}Diskussion}{5}{section.6}
+\contentsline {section}{\numberline {2}Theorie}{1}{section.3}
+\contentsline {subsection}{\numberline {2.1}Tr\IeC {\"a}gheitsmoment des physikalischen Pendels}{1}{subsection.4}
+\contentsline {subsection}{\numberline {2.2}Der Kreisel}{1}{subsection.9}
+\contentsline {subsection}{\numberline {2.3}Tr\IeC {\"a}gheitsmoment des Kreisels}{2}{subsection.13}
+\contentsline {subsection}{\numberline {2.4}Pr\IeC {\"a}zession}{3}{subsection.18}
+\contentsline {subsection}{\numberline {2.5}Nutation}{4}{subsection.22}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{5}{section.27}
+\contentsline {subsection}{\numberline {3.1}Physikalisches Pendel}{5}{subsection.29}
+\contentsline {subsection}{\numberline {3.2}Pr\IeC {\"a}zession}{6}{subsection.30}
+\contentsline {subsection}{\numberline {3.3}Nutation}{6}{subsection.31}
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.32}
+\contentsline {subsection}{\numberline {4.1}Physikalisches Pendel}{7}{subsection.34}
+\contentsline {subsection}{\numberline {4.2}Pr\IeC {\"a}zession}{8}{subsection.36}
+\contentsline {subsection}{\numberline {4.3}Vergleich der Ergebnisse}{9}{subsection.39}
+\contentsline {subsection}{\numberline {4.4}Nutation}{9}{subsection.41}
+\contentsline {section}{\numberline {5}Diskussion}{11}{section.44}
+\contentsline {section}{\numberline {A}Messwerte (Original)}{13}{appendix.47}
