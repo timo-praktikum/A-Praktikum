@@ -1952,7 +1952,10 @@
     <bcf:datasource type="file" datatype="bibtex">literature.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">IFA:Online</bcf:citekey>
+    <bcf:citekey order="1">LP:Online</bcf:citekey>
+    <bcf:citekey order="2">LP:Online</bcf:citekey>
+    <bcf:citekey order="3">LP:Online</bcf:citekey>
+    <bcf:citekey order="4">IFA:Online</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>

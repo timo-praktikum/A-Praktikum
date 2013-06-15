@@ -38,6 +38,28 @@
       \verb http://www.dguv.de/ifa/de/gestis/stoffdb/index.jsp
       \endverb
     \endentry
+    \entry{LP:Online}{online}{}
+      \name{labelname}{2}{}{%
+        {{hash=9435c8d1b4f72212ef3095fbd12f4066}{Prior}{P\bibinitperiod}{Mira}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a887395f64265e6248f0ee698400bb2f}{Mann}{M\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=9435c8d1b4f72212ef3095fbd12f4066}{Prior}{P\bibinitperiod}{Mira}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a887395f64265e6248f0ee698400bb2f}{Mann}{M\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0d9d2985023f2d24451ea99579dcd09e}
+      \strng{fullhash}{0d9d2985023f2d24451ea99579dcd09e}
+      \field{sortinit}{P}
+      \field{labeltitle}{Lehrportal der Georg-August-Universität Göttingen (LP)}
+      \field{subtitle}{Die Mohrsche Waage}
+      \field{title}{Lehrportal der Georg-August-Universität Göttingen (LP)}
+      \field{urlday}{14}
+      \field{urlmonth}{06}
+      \field{urlyear}{2013}
+      \verb{url}
+      \verb http://lp.uni-goettingen.de/get/text/4773
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

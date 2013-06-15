@@ -1,1 +1,18 @@
 \section{Theorie}
+\subsection{Die Mohrsche Waage}
+%
+\begin{figure}[!htbp]
+\centering
+\resizebox{0.5\textwidth}{!}{\input{mohrsche_waage.pdf_tex}}
+\caption{Aufbau der Mohrschen Waage \cite{LP:Online}}
+\label{img:mohrsche}
+\end{figure}
+%
+Die Mohrsche Waage ist eine Balkenwaage zur Dichtebestimmung von Flüssigkeiten basierend auf dem Archimedischen Prinzip. Am Ende des einen Hebelarms hängt ein Tauchgewicht, welches vollständig in die zu untersuchende Flüssigkeit eingetaucht wird. Um den Auftrieb auszugleichen werden Gewichte in die dafür vorgesehenen Kerben eingehängt (vgl. Abb. \ref{img:mohrsche}), bis die Waage wieder horizontal ausgerichtet ist. Dies wird zuerst für eine Flüssigkeit bekannter Dichte und anschließend für die Flüssigkeit, deren Dichte bestimmt werden soll, durchgeführt. Dann lässt sich die Dichte der zweiten Flüssigkit folgendermaßen bestimmen:\cite{LP:Online}
+%
+\begin{align}
+	\rho_1=\frac{\sum_{i=1}^{k}m_{i1} \cdot r_i}{\sum_{i=1}^{k}m_{i2} \cdot r_i}\cdot\rho_2.
+	\label{eq:mohrsche}
+\end{align}
+%
+Dabei ist $\rho$ die jeweilige Dichte, $m_i$ die Masse des $i$-ten Gewichts und $r_i$ der Abstand des $i$-ten Gewichts von  der Drehachse.
