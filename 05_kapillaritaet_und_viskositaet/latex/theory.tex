@@ -55,6 +55,40 @@ Bei vollständig benetzenden Flüssigkeiten ist $\varphi = 0$, da die gesamte Ka
 	\label{eq:steighoehe}
 \end{align}
 %
+\subsection{Das Gesetz von Hagen-Poiseuille}
+Reale Flüssigkeiten in Rohren fließen nicht mit konstanter Geschwindigkeit. Stattdessen bilden sich entweder Schichten gleicher Geschwindigkeit aus (\textit{laminare Strömung}) oder es treten Wirbel auf (\textit{turbulente Strömung}). Für laminare Rohrströmungen gilt das \textit{Gesetz von Hagen-Poiseuille}: \cite{Demtroeder:2008:Book}
+%
+\begin{align}
+	\dot{V} = \frac{\mathrm dV}{\mathrm dt} = \frac{\pi \left(p_1 - p_2\right)}{8\eta\l} \cdot r^4
+	\label{eq:HP-Gesetz}
+\end{align}
+%
+mit
+%
+\begin{table}[H]
+    \begin{tabular}{@{}{l}{l}@{}}
+      	 $\dot{V}$: & Volumenstrom durch das Rohr \\
+      	 $p_1$: & Druck am Anfang des Rohres \\
+      	 $p_2$: & Druck am Ende des Rohres \\
+      	 $\eta$: & dynamische Viskosität der Flüssigkeit \\
+      	 $l$: & Länge des Rohres \\
+      	 $r$: & Innenradius des Rohres \\
+    \end{tabular}%
+\end{table}
+%
+Nun soll eine Flüssigkeit betrachtet werden, die aufgrund der Gewichtskraft $F=mg$ aus einem Zylinder mit dem Radius R ausströmt. Dann gilt für das Volumen $\mathrm dV = \pi R^2 \mathrm dh$ und für den Druck $\Delta p = p_1 - p_2 = \rho gh$ mit der Dichte $\rho$. In (\ref{eq:HP-Gesetz}) eingesetzt erhält man die Differentialgleichung
+%
+\begin{align}
+	\pi R^2 \mathrm dh = - \frac{\pi \rho gh}{8\eta l} \cdot r^4 \mathrm dt
+\end{align}
+%
+mit der Lösung
+%
+\begin{align}
+	h(t) = h_0 \cdot \exp \left(- \frac{\rho g}{8\eta lR^2} r^4t\right).
+	\label{eq:exp-Gesetz}
+\end{align}
+%
 \subsection{Die Mohrsche Waage}
 %
 \begin{figure}[!htbp]
