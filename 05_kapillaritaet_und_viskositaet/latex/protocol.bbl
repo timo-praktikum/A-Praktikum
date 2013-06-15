@@ -19,23 +19,48 @@
 
 \refsection{0}
   \sortlist{entry}{nty}
-    \entry{IFA:Online}{online}{}
+    \entry{Demtroeder:2008:Book}{book}{}
       \name{labelname}{1}{}{%
-        {{hash=9fca146320aa3418a42658f7f394f0ed}{Arbeitsschutz\bibnamedelimb der\bibnamedelimb Deutschen\bibnamedelimb Gesetzlichen\bibnamedelimb Unfallversicherung\bibnamedelima (IFA)}{A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim (\bibinitperiod}{Institut}{I\bibinitperiod}{für}{f\bibinitperiod}{}{}}%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{Demtröder}{D\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=9fca146320aa3418a42658f7f394f0ed}{Arbeitsschutz\bibnamedelimb der\bibnamedelimb Deutschen\bibnamedelimb Gesetzlichen\bibnamedelimb Unfallversicherung\bibnamedelima (IFA)}{A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim (\bibinitperiod}{Institut}{I\bibinitperiod}{für}{f\bibinitperiod}{}{}}%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{Demtröder}{D\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{9fca146320aa3418a42658f7f394f0ed}
-      \strng{fullhash}{9fca146320aa3418a42658f7f394f0ed}
-      \field{sortinit}{A}
-      \field{labeltitle}{GESTIS-Stoffdatenbank}
-      \field{title}{GESTIS-Stoffdatenbank}
-      \field{urlday}{13}
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer DE}%
+      }
+      \strng{namehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{fullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \field{sortinit}{D}
+      \field{labeltitle}{Experimentalphysik 1 - Mechanik und Wärme}
+      \field{edition}{5}
+      \field{isbn}{978-3-540-79294-9}
+      \field{title}{Experimentalphysik 1 - Mechanik und Wärme}
+      \field{year}{2008}
+    \endentry
+    \entry{LP:Online}{online}{}
+      \name{labelname}{2}{}{%
+        {{hash=9435c8d1b4f72212ef3095fbd12f4066}{Prior}{P\bibinitperiod}{Mira}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a887395f64265e6248f0ee698400bb2f}{Mann}{M\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=9435c8d1b4f72212ef3095fbd12f4066}{Prior}{P\bibinitperiod}{Mira}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a887395f64265e6248f0ee698400bb2f}{Mann}{M\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0d9d2985023f2d24451ea99579dcd09e}
+      \strng{fullhash}{0d9d2985023f2d24451ea99579dcd09e}
+      \field{sortinit}{P}
+      \field{labeltitle}{Lehrportal der Georg-August-Universität Göttingen (LP)}
+      \field{subtitle}{Die Mohrsche Waage}
+      \field{title}{Lehrportal der Georg-August-Universität Göttingen (LP)}
+      \field{urlday}{14}
       \field{urlmonth}{06}
       \field{urlyear}{2013}
       \verb{url}
-      \verb http://www.dguv.de/ifa/de/gestis/stoffdb/index.jsp
+      \verb http://lp.uni-goettingen.de/get/text/4773
       \endverb
     \endentry
   \endsortlist
