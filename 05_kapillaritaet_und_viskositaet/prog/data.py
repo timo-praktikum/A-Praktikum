@@ -1,4 +1,4 @@
-from numpy import loadtxt, sqrt, pi, mean, log, linspace
+from numpy import loadtxt, sqrt, pi, mean, log, linspace, array
 import matplotlib.pyplot as plt
 from linreg import linreg
 
@@ -16,13 +16,32 @@ sigma_d = sigma_d_Kapillare/sqrt(3)
 #gruen - blau - rot
 h_Fluid = (loadtxt('../data/steighoehen_messung'))*10**(-3)
 sigma_h_Fluid = 0.5e-3
-h_dest = h_Fluid[0:3]
-h_methol = h_Fluid[3:6]
-h_glykol = h_Fluid[6:9]
+h_dest = array([mean((h_Fluid[0:3])[:,0]),mean((h_Fluid[0:3])[:,1]),mean((h_Fluid[0:3])[:,2])])
+h_methol = array([mean((h_Fluid[3:6])[:,0]),mean((h_Fluid[3:6])[:,1]),mean((h_Fluid[3:6])[:,2])])
+h_glykol = array([mean((h_Fluid[6:9])[:,0]),mean((h_Fluid[6:9])[:,1]),mean((h_Fluid[6:9])[:,2])])
+
+#Dichten
+p_dest = 1
+p_methol = 0.826
+p_glykol = 1.003
 
 #Oberflächenspannung dest. Wasser
+_sigma_dest_gruen = h_dest[0]*d_gruen*g*p_dest/4
+_sigma_dest_blau = h_dest[1]*d_blau*g*p_dest/4
+_sigma_dest_rot = h_dest[2]*d_rot*g*p_dest/4
+_sigma_dest = array([_sigma_dest_gruen,_sigma_dest_blau,_sigma_dest_rot])
+
 #Oberflächenspannung Methol-Alkohol
+_sigma_methol_gruen = h_methol[0]*d_gruen*g*p_methol/4
+_sigma_methol_blau = h_methol[1]*d_blau*g*p_methol/4
+_sigma_methol_rot = h_methol[2]*d_rot*g*p_methol/4
+_sigma_methol = array([_sigma_methol_gruen,_sigma_methol_blau,_sigma_methol_rot])
+
 #Oberflächenspannung Aethylenglykol
+_sigma_glykol_gruen = h_glykol[0]*d_gruen*g*p_glykol/4
+_sigma_glykol_blau = h_glykol[1]*d_blau*g*p_glykol/4
+_sigma_glykol_rot = h_glykol[2]*d_rot*g*p_glykol/4
+_sigma_glykol = array([_sigma_glykol_gruen,_sigma_glykol_blau,_sigma_glykol_rot])
 
 #Aufgabe 2b
 def a2b():
