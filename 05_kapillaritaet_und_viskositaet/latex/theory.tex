@@ -1,4 +1,34 @@
 \section{Theorie}
+%
+\subsection{Oberflächenspannung}
+Betrachtet man die Moleküle einer realen Flüssigkeit, so haben die Moleküle an der Oberfläche weniger Bindungen zu Nachbarmolekülen als jene im Inneren der Flüssigkeit. Während die Kräfte auf ein Molekül sich im Inneren gegenseitig aufheben, wirkt auf ein Molekül an der Oberfläche eine permanente anziehende Kraft. Will man also ein Molekül aus dem Inneren an die Oberfläche verschieben, muss eine Arbeit aufgebracht werden.  Um die Oberfläche der Flüssigkeit um $\Delta A$ zu vergrößern, muss die Arbeit $\Delta W$ geleistet werden und man nennt den Quotienten
+%
+\begin{align}
+	\frac{\Delta W}{\Delta A}=:\sigma
+\end{align}
+%
+die Oberflächenspannung. \cite{Demtroeder:2008:Book}\\
+%
+Analog dazu lässt sich die Grenzflächenspannung $\sigma_{ij}$ an der Grenzfläche zwischen zwei Medien definieren als die Energie, die aufgewendet werden muss, um die Grenzfläche $i$ gegen $k$ um \SI{1}{\m\squared} zu vergrößern. (weitere Erläuterungen z. B. in \cite{Demtroeder:2008:Book}).
+\subsection{Kapillare Steighöhe}
+%
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{\input{grenzflaechen.pdf_tex}}
+\caption{Veranschaulichung der Grenzflächenspannungen}
+\label{img:grenzflaechen}
+\end{figure}
+%
+Nach Abbildung \ref{img:grenzflaechen} werden folgende Grenzflächenspannungen definiert:
+%
+\begin{itemize}
+	\item $\sigma_{1,2}$: Grenzfläche Glas-Flüssigkeit
+	\item $\sigma_{1,3}$: Grenzfläche Glas-Luft
+	\item $\sigma_{2,3}$: Grenzfläche Flüssigkeit-Luft
+\end{itemize}
+%
+Im Folgenden werde eine vollständig benetzende Flüssigkeit betrachtet, d. h. $\sigma_{1,3}>\sigma_{1,2}+\sigma_{2,3}$.
+%
 \subsection{Die Mohrsche Waage}
 %
 \begin{figure}[!htbp]
