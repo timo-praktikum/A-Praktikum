@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.6.6)  15 JUN 2013 21:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.6.6)  16 JUN 2013 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1835,7 +1835,7 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  [2]
 (./introduction.tex) (./theory.tex (./grenzflaechen.pdf_tex
-<grenzflaechen.pdf, id=79, 365.01369pt x 330.68306pt>
+<grenzflaechen.pdf, id=89, 365.01369pt x 330.68306pt>
 File: grenzflaechen.pdf Graphic file (type pdf)
  <use grenzflaechen.pdf>
 Package pdftex.def Info: grenzflaechen.pdf used on input line 52.
@@ -1858,17 +1858,30 @@ LaTeX Warning: Command \l invalid in math mode on input line 64.
 
 LaTeX Warning: Command \l invalid in math mode on input line 64.
 
-[2] (./mohrsche_waage.pdf_tex <mohrsche_waage.pdf, id=115, 321.2pt x 321.2pt>
+[2] (./mohrsche_waage.pdf_tex <mohrsche_waage.pdf, id=125, 321.2pt x 321.2pt>
 File: mohrsche_waage.pdf Graphic file (type pdf)
 
 <use mohrsche_waage.pdf>
 Package pdftex.def Info: mohrsche_waage.pdf used on input line 52.
 (pdftex.def)             Requested size: 321.2pt x 321.20901pt.
-)) (./execution.tex) (./evaluation.tex [3 <./mohrsche_waage.pdf>] <Plot_Aufg2b.
-pdf, id=195, 587.19376pt x 442.65375pt>
-File: Plot_Aufg2b.pdf Graphic file (type pdf)
+)) (./execution.tex
+<versuchsaufbau.jpg, id=130, 301.125pt x 233.37187pt>
+File: versuchsaufbau.jpg Graphic file (type jpg)
+ <use versuchsaufbau.jpg>
+Package pdftex.def Info: versuchsaufbau.jpg used on input line 5.
+(pdftex.def)             Requested size: 301.12425pt x 233.37129pt.
 
-<use Plot_Aufg2b.pdf>
+[3 <./mohrsche_waage.pdf>] (./skizze_teil2.pdf_tex
+<skizze_teil2.pdf, id=208, 318.77557pt x 319.99551pt>
+File: skizze_teil2.pdf Graphic file (type pdf)
+ <use skizze_teil2.pdf>
+Package pdftex.def Info: skizze_teil2.pdf used on input line 52.
+(pdftex.def)             Requested size: 318.77556pt x 320.01913pt.
+))
+(./evaluation.tex [4 <./versuchsaufbau.jpg>]
+<Plot_Aufg2b.pdf, id=218, 587.19376pt x 442.65375pt>
+File: Plot_Aufg2b.pdf Graphic file (type pdf)
+ <use Plot_Aufg2b.pdf>
 Package pdftex.def Info: Plot_Aufg2b.pdf used on input line 29.
 (pdftex.def)             Requested size: 411.03282pt x 309.8555pt.
 
@@ -1876,7 +1889,7 @@ Overfull \hbox (35.22905pt too wide) in paragraph at lines 29--30
  [] 
  []
 
-) (./discussion.tex) [4] [5 <./Plot_Aufg2b.pdf>]
+) (./discussion.tex) [5 <./skizze_teil2.pdf>] [6 <./Plot_Aufg2b.pdf>] [7]
 Overfull \hbox (3.69376pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/10.95 Wolfgang Dem-trö-der. \T1/lmr/m/it/10.95 Ex-pe-ri-men-tal-p
 hy-sik 1 - Me-cha-nik und Wär-me\T1/lmr/m/n/10.95 . 5. Aufl.
@@ -1887,22 +1900,22 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 88.
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
- [6]
+ [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (./protocol.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `protocol.out' has not changed.
-(rerunfilecheck)             Checksum: 5F090D8D044DB73DF181AA9BB1FD2928;666.
+(rerunfilecheck)             Checksum: 8497165DBFC8ECD6D8A08C2908C6B0F8;801.
 Package logreq Info: Writing requests to 'protocol.run.xml'.
 \openout1 = `protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30869 strings out of 493488
- 590962 string characters out of 3146893
- 951862 words of memory out of 3000000
- 33547 multiletter control sequences out of 15000+200000
+ 30895 strings out of 493488
+ 591415 string characters out of 3146893
+ 950977 words of memory out of 3000000
+ 33562 multiletter control sequences out of 15000+200000
  100081 words of font info for 83 fonts, out of 3000000 for 9000
  961 hyphenation exceptions out of 8191
  65i,16n,71p,797b,1456s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1923,10 +1936,10 @@ ublic/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/f
 onts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmt
 t10.pfb>
-Output written on protocol.pdf (8 pages, 334166 bytes).
+Output written on protocol.pdf (10 pages, 381439 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
