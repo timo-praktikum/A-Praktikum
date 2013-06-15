@@ -5,9 +5,9 @@
 \contentsline {section}{\numberline {2}Theorie}{1}{section.3}
 \contentsline {subsection}{\numberline {2.1}Oberfl\IeC {\"a}chenspannung}{1}{subsection.4}
 \contentsline {subsection}{\numberline {2.2}Kapillare Steigh\IeC {\"o}he}{1}{subsection.6}
-\contentsline {subsection}{\numberline {2.3}Die Mohrsche Waage}{2}{subsection.8}
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{3}{section.11}
-\contentsline {section}{\numberline {4}Auswertung}{3}{section.12}
-\contentsline {subsection}{\numberline {4.1}Oberfl\IeC {\"a}chenspannung}{3}{subsection.13}
-\contentsline {section}{\numberline {5}Diskussion}{3}{section.15}
-\contentsline {section}{\numberline {A}Messwerte (Original)}{4}{appendix.17}
+\contentsline {subsection}{\numberline {2.3}Die Mohrsche Waage}{2}{subsection.12}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{3}{section.15}
+\contentsline {section}{\numberline {4}Auswertung}{3}{section.16}
+\contentsline {subsection}{\numberline {4.1}Oberfl\IeC {\"a}chenspannung}{3}{subsection.17}
+\contentsline {section}{\numberline {5}Diskussion}{3}{section.19}
+\contentsline {section}{\numberline {A}Messwerte (Original)}{4}{appendix.21}

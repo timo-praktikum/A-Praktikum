@@ -4,12 +4,12 @@
 Betrachtet man die Moleküle einer realen Flüssigkeit, so haben die Moleküle an der Oberfläche weniger Bindungen zu Nachbarmolekülen als jene im Inneren der Flüssigkeit. Während die Kräfte auf ein Molekül sich im Inneren gegenseitig aufheben, wirkt auf ein Molekül an der Oberfläche eine permanente anziehende Kraft. Will man also ein Molekül aus dem Inneren an die Oberfläche verschieben, muss eine Arbeit aufgebracht werden.  Um die Oberfläche der Flüssigkeit um $\Delta A$ zu vergrößern, muss die Arbeit $\Delta W$ geleistet werden und man nennt den Quotienten
 %
 \begin{align}
-	\frac{\Delta W}{\Delta A}=:\sigma
+	\frac{\Delta W}{\Delta A} =: \sigma
 \end{align}
 %
 die Oberflächenspannung. \cite{Demtroeder:2008:Book}\\
 %
-Analog dazu lässt sich die Grenzflächenspannung $\sigma_{ij}$ an der Grenzfläche zwischen zwei Medien definieren als die Energie, die aufgewendet werden muss, um die Grenzfläche $i$ gegen $k$ um \SI{1}{\m\squared} zu vergrößern. (weitere Erläuterungen z. B. in \cite{Demtroeder:2008:Book}).
+Analog dazu lässt sich die Grenzflächenspannung $\sigma_{ij}$ an der Grenzfläche zwischen zwei Medien definieren als die Energie, die aufgewendet werden muss, um die Grenzfläche $i$ gegen $j$ um \SI{1}{\m\squared} zu vergrößern. (weitere Erläuterungen z. B. in \cite{Demtroeder:2008:Book}).
 \subsection{Kapillare Steighöhe}
 %
 \begin{figure}[H]
@@ -27,7 +27,33 @@ Nach Abbildung \ref{img:grenzflaechen} werden folgende Grenzflächenspannungen d
 	\item $\sigma_{2,3}$: Grenzfläche Flüssigkeit-Luft
 \end{itemize}
 %
-Im Folgenden werde eine vollständig benetzende Flüssigkeit betrachtet, d. h. $\sigma_{1,3}>\sigma_{1,2}+\sigma_{2,3}$.
+Im Folgenden werde eine vollständig benetzende Flüssigkeit betrachtet, d. h. $\sigma_{1,3}>\sigma_{1,2}+\sigma_{2,3}$.\\
+In einer Kapillare (dünnes Röhrchen) bildet eine benetzende Flüssigkeit eine Säule der Höhe $h$ über der umgebenden Flüssigkeitsoberfläche. Hebt man diese Säule um $\mathrm dh$ an, so ändert sich die potentielle Energie um
+%
+\begin{align}
+	\mathrm dE_{\text{pot}} = mgh \cdot \mathrm dh = \pi r^2g\rho h \cdot \mathrm dh,
+	\label{eq:Epot}
+\end{align}
+%
+während sich die Oberflächenenergie (entspricht bei Flüssigkeiten der Oberflächenspannung) um
+%
+\begin{align}
+	\mathrm dE_{\text{oberfl}} = -2\pi r \cdot \mathrm dh \left(\sigma_{1,3}-\sigma_{1,2}\right) = 2\pi r \cdot \mathrm dh \cdot \sigma_{2,3} \cdot \cos \varphi
+	\label{eq:Eoberfl}
+\end{align}
+%
+ändert. \cite{Demtroeder:2008:Book} Es wird sich eine Höhe einstellen, bei der gilt: $\mathrm dE_{\text{pot}} + \mathrm dE_{\text{oberfl}} = 0$. Gleichsetzen von (\ref{eq:Epot}) und (\ref{eq:Eoberfl}) liefert
+%
+\begin{align}
+	h = \frac{2\sigma_{2,3} \cdot \cos \varphi}{rg\rho}.
+\end{align}
+%
+Bei vollständig benetzenden Flüssigkeiten ist $\varphi = 0$, da die gesamte Kapillare von innen benetzt wird. Mit der Oberflächenspannung $\sigma = \sigma_{2,3}$ (Grenzfläche Flüssigkeit-Luft) ergibt sich:
+%
+\begin{align}
+	h = \frac{2\sigma}{rg\rho}
+	\label{eq:steighoehe}
+\end{align}
 %
 \subsection{Die Mohrsche Waage}
 %
@@ -41,7 +67,7 @@ Im Folgenden werde eine vollständig benetzende Flüssigkeit betrachtet, d. h. $
 Die Mohrsche Waage ist eine Balkenwaage zur Dichtebestimmung von Flüssigkeiten basierend auf dem Archimedischen Prinzip. Am Ende des einen Hebelarms hängt ein Tauchgewicht, welches vollständig in die zu untersuchende Flüssigkeit eingetaucht wird. Um den Auftrieb auszugleichen werden Gewichte in die dafür vorgesehenen Kerben eingehängt (vgl. Abb. \ref{img:mohrsche}), bis die Waage wieder horizontal ausgerichtet ist. Dies wird zuerst für eine Flüssigkeit bekannter Dichte und anschließend für die Flüssigkeit, deren Dichte bestimmt werden soll, durchgeführt. Dann lässt sich die Dichte der zweiten Flüssigkit folgendermaßen bestimmen:\cite{LP:Online}
 %
 \begin{align}
-	\rho_1=\frac{\sum_{i=1}^{k}m_{i1} \cdot r_i}{\sum_{i=1}^{k}m_{i2} \cdot r_i}\cdot\rho_2.
+	\rho_1 = \frac{\sum_{i=1}^{k}m_{i1} \cdot r_i}{\sum_{i=1}^{k}m_{i2} \cdot r_i} \cdot \rho_2.
 	\label{eq:mohrsche}
 \end{align}
 %

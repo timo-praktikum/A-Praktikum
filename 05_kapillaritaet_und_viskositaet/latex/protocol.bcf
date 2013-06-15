@@ -1954,9 +1954,10 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Demtroeder:2008:Book</bcf:citekey>
     <bcf:citekey order="2">Demtroeder:2008:Book</bcf:citekey>
-    <bcf:citekey order="3">LP:Online</bcf:citekey>
+    <bcf:citekey order="3">Demtroeder:2008:Book</bcf:citekey>
     <bcf:citekey order="4">LP:Online</bcf:citekey>
     <bcf:citekey order="5">LP:Online</bcf:citekey>
+    <bcf:citekey order="6">LP:Online</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>
