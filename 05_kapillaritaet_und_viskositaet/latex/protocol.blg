@@ -1,14 +1,14 @@
 [0] Config.pm:361> INFO - This is Biber 1.5
 [0] Config.pm:364> INFO - Logfile is 'protocol.blg'
-[88] biber:193> INFO - === Sa Jun 15, 2013, 17:42:47
-[88] Biber.pm:327> INFO - Reading 'protocol.bcf'
-[163] Biber.pm:619> INFO - Found 2 citekeys in bib section 0
-[179] Biber.pm:2976> INFO - Processing section 0
-[190] Biber.pm:3086> INFO - Looking for bibtex format file 'literature.bib' for section 0
-[191] bibtex.pm:889> INFO - Decoding LaTeX character macros into UTF-8
-[192] bibtex.pm:764> INFO - Found BibTeX data source 'literature.bib'
-[264] Biber.pm:2860> INFO - Overriding locale 'en_GB.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[264] Biber.pm:2866> INFO - Sorting 'entry' list 'nty' keys
-[264] Biber.pm:2870> INFO - No sort tailoring available for locale 'en_GB.UTF-8'
-[284] bbl.pm:462> INFO - Writing 'protocol.bbl' with encoding 'UTF-8'
-[285] bbl.pm:535> INFO - Output to protocol.bbl
+[85] biber:193> INFO - === So Jun 16, 2013, 23:52:52
+[85] Biber.pm:327> INFO - Reading 'protocol.bcf'
+[156] Biber.pm:619> INFO - Found 2 citekeys in bib section 0
+[172] Biber.pm:2976> INFO - Processing section 0
+[184] Biber.pm:3086> INFO - Looking for bibtex format file 'literature.bib' for section 0
+[185] bibtex.pm:889> INFO - Decoding LaTeX character macros into UTF-8
+[185] bibtex.pm:764> INFO - Found BibTeX data source 'literature.bib'
+[279] Biber.pm:2860> INFO - Overriding locale 'en_GB.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[279] Biber.pm:2866> INFO - Sorting 'entry' list 'nty' keys
+[279] Biber.pm:2870> INFO - No sort tailoring available for locale 'en_GB.UTF-8'
+[298] bbl.pm:462> INFO - Writing 'protocol.bbl' with encoding 'UTF-8'
+[298] bbl.pm:535> INFO - Output to protocol.bbl
